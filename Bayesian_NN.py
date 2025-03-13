@@ -1,8 +1,7 @@
 import numpy as np
 import pymc as pm
-import pytensor
 
-floatX = pytensor.config.floatX
+floatX = np.float64
 rng = np.random.default_rng()
 
 def construct_nn(X_train, Y_train, hidden_layers=[5, 5], batch_size=50):

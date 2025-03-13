@@ -1,0 +1,68 @@
+X: Location of a grid (Continuous)
+Y: Location of a grid (Continuous)
+HAZARD 1 IN 30: Flood hazard of the 30-year flood event (Ordinal)
+HAZARD 1 IN 100: Flood hazard of the 100-year flood event (Ordinal)
+HAZARD 1 IN 1000: Flood hazard of the 1000-year flood event (Ordinal)
+ELEVATION: Elevation (meter) (Continuous)
+SLOPE: Slope (degree) (Continuous)
+LANDUSE: Landuse(Categorical)
+IMPERVIOUSNESS: Imperviousness (ratio) (Continuous)
+LITHOLOGY: Lithological description (Categorical)
+SUBSTRATE: Substrate (Categorical)
+NDVI: Normalized Difference Vegetation Index (ratio) (Continuous)
+DISTANCE TO RIVER: Distance to river (meter) (Continuous)
+BUILDING TYPE: Building (Categorical)
+DISTANCE TO ROAD: Distance to Road (meter) (Continuous)
+
+SUBSTRATE:
+UNIT IS CLASSED AS BEDROCK 1
+UNIT IS CLASSED AS A SUPERFICIAL DEPOSIT WITH A THIN SURFICIAL FORM (VENEER) 2
+UNIT IS CLASSED AS A SUPERFICIAL DEPOSIT 3
+
+LITHOLOGY:
+BASALT 1
+BRECCIA 2
+CLAY-SILT-SAND-GRAVEL 3                    
+LIMESTONE 4
+LIMESTONE-MUDSTONE 5
+MUDSTONE 6                              
+MUDSTONE-HALITE 7 
+MUDSTONE-LIMESTONE 8
+MUDSTONE-SANDSTONE 9                    
+SAND-CLAY-GRAVEL 10
+SAND-GRAVEL 11
+SANDSTONE 12   
+SANDSTONE-BRECCIA 13 
+GRAVEL 14 
+SAND 15 
+
+LANDUSE:
+Deciduous woodland 1 
+Coniferous woodland 2
+Arable 3 
+Improve grassland 4 
+Neutral grassland 5 
+Calcareous grassland 6 
+Acid grassland 7 
+Fen 8 
+Heather 9 
+Heather grassland 10 
+Bog 11 
+Inland rock 12 
+Saltwater 13 
+Freshwater 14
+Supralittoral rock 15 
+Supralittoral sediment 16 
+Littoral rock 17 
+Littoral sediment 18 
+Saltmarsh 19
+Urban 20 
+Suburban 21
+
+BUILDING TYPE:
+Buildings 1
+Land 2
+Rail 3
+Roads 4
+Structures 5
+Water 6
