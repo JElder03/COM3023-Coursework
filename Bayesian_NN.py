@@ -7,10 +7,11 @@ rng = np.random.default_rng()
 def construct_minibatch_nn(X_train, Y_train, hidden_layers=[5, 5], batch_size=50, sigma = 1, mu = 0):
 
     # Initialize random weights for each layer
-    init_vals = [rng.standard_normal(size=(X_train.shape[1], hidden_layers[0])).astype(floatX)]
+    rng.normal()
+    init_vals = [rng.normal(loc = mu, scale = sigma, size=(X_train.shape[1], hidden_layers[0])).astype(floatX)]
     for i in range(len(hidden_layers) - 1):
-        init_vals.append(rng.standard_normal(size=(hidden_layers[i], hidden_layers[i + 1])).astype(floatX))
-    init_out = rng.standard_normal(size=hidden_layers[-1]).astype(floatX)
+        init_vals.append(rng.normal(loc = mu, scale = sigma, size=(hidden_layers[i], hidden_layers[i + 1])).astype(floatX))
+    init_out = rng.normal(loc = mu, scale = sigma, size=hidden_layers[-1]).astype(floatX)
     
     coords = {
         "train_cols": np.arange(X_train.shape[1]),
@@ -48,10 +49,10 @@ def construct_nn(X_train, Y_train, hidden_layers=[5, 5], sigma = 1, mu = 0):
     rng = np.random.default_rng()  # Ensure RNG is initialized
     floatX = np.float64  # Define floating point precision
 
-    init_vals = [rng.standard_normal(size=(X_train.shape[1], hidden_layers[0])).astype(floatX)]
+    init_vals = [rng.normal(loc = mu, scale = sigma, size=(X_train.shape[1], hidden_layers[0])).astype(floatX)]
     for i in range(len(hidden_layers) - 1):
-        init_vals.append(rng.standard_normal(size=(hidden_layers[i], hidden_layers[i + 1])).astype(floatX))
-    init_out = rng.standard_normal(size=hidden_layers[-1]).astype(floatX)
+        init_vals.append(rng.normal(loc = mu, scale = sigma, size=(hidden_layers[i], hidden_layers[i + 1])).astype(floatX))
+    init_out = rng.normal(loc = mu, scale = sigma, size=hidden_layers[-1]).astype(floatX)
     
     coords = {
         "train_cols": np.arange(X_train.shape[1]),
